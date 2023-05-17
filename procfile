@@ -1,0 +1,1 @@
+web: sh space setup.sh && streamlit run app.py
