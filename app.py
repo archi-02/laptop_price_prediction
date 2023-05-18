@@ -42,4 +42,4 @@ if st.button("Predict Price"):
                                   "HDD", "Flash", "Hybrid", "Ram(GB)", "Weight", "IPS Panel", "Retina Display",
                                   "Touchscreen", "Quad HD+", "Full HD", "4K Ultra HD"])
    predicted_price = pipe_xgb.predict(query)
-   st.title(f"The predicted price is: {predicted_price[0]}")
+   st.title(f"The predicted price is: Rs {round(predicted_price[0])}")
