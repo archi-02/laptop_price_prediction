@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import pandas as pd
-import sklearn
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import make_column_transformer
 from sklearn.pipeline import make_pipeline
