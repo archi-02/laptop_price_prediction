@@ -1,6 +1,13 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import sklearn
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.compose import make_column_transformer
+from sklearn.pipeline import make_pipeline
+from sklearn.metrics import r2_score
+from sklearn.model_selection import train_test_split
+from xgboost import XGBRegressor
 
 df = pickle.load(open("df.pkl", "rb"))
 pipe_xgb = pickle.load(open("pipe.pkl", "rb"))
